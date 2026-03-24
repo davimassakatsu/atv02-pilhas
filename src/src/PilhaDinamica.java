@@ -1,4 +1,5 @@
 public class PilhaDinamica implements PilhaOperacoes {
+
     No topo;
 
     public PilhaDinamica() {
@@ -8,7 +9,7 @@ public class PilhaDinamica implements PilhaOperacoes {
 
     private boolean estaVazio() {
         if(this.topo == null) {
-            System.out.println("A pilha está vazia!");
+            System.out.println("A pilha está vazia!!!");
             return true;
         }
         return false;
@@ -19,13 +20,13 @@ public class PilhaDinamica implements PilhaOperacoes {
         No novoNo = new No(elemento);
         novoNo.setProx(this.topo);
         this.topo = novoNo;
-        System.out.println("Elemento " + elemento + " adicionado com sucesso!");
+        System.out.println("Elemento " + elemento + " empilhado com sucesso!");
     }
 
     @Override
     public void desempilhar() {
         if(!estaVazio()) {
-            System.out.println("Elemento " + this.topo.getConteudo() + " removido com sucesso!");
+            System.out.println("Elemento " + this.topo.getConteudo() + " desempilhado e removido com sucesso!");
             this.topo = this.topo.getProx();
         }
     }
