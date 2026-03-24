@@ -63,5 +63,7 @@ public class PilhaDinamica implements PilhaOperacoes {
         }
 
         System.out.println("Quantidade de elementos: " + quantidade);
+
+
     }
 }

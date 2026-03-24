@@ -65,4 +65,6 @@ public class PilhaSimples implements PilhaOperacoes {
     public void quantidadeElementos() {
         System.out.println("Numero de elementos: " + (this.topo + 1));
     }
+
+
 }
